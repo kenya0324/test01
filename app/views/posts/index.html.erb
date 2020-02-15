@@ -1,3 +1,16 @@
-<%= link_to 'Post', new_post_path, remote: true, class: "btn btn-lg, btn-primary" %>
+<div class="container clearfix">
 
-<div id="post-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true"></div>
+    <%= link_to 'Post', new_post_path, remote: true, class: "btn btn-lg, btn-primary post_button" %>
+
+    <% @posts.each do |post| %>
+        <div id="post_all">
+        	<p><%= post.post_content %></p>
+        	<% post.categories.each do |category| %>
+			    <p><%= category.name %></p>
+			<% end %>
+        </div>
+    <% end%>
+
+    <div id="post-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true"></div>
+
+</div>

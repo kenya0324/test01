@@ -20,13 +20,14 @@
 						</div>
 						<div class="post_new_category">
 							<%= f.label :category, 'カテゴリ' %>
-						    <%= f.collection_check_boxes(:category_ids, Category.all, :id, :name) do |category| %> 
+						    <%= f.collection_check_boxes(:category_ids, Category.all, :id, :name) do |category| %>
 						        <%= category.label do %>
 						            <%= category.check_box %>
 						            <%= category.text %>
 						        <% end %>
 						    <% end %>
 					    </div>
+					        <%= f.hidden_field :user_id, :value => current_user.id %>
 				</div>
 
 				<div class="modal-footer actions">
