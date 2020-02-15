@@ -1,0 +1,6 @@
+<div id="post_all">
+        	<p><%= post.post_content %></p>
+        	<% post.categories.each do |category| %>
+			    <p><%= category.name %></p>
+			<% end %>
+</div>

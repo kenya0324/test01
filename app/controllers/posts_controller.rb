@@ -1,7 +1,7 @@
 class PostsController < ApplicationController
 
 	def index
-
+        @posts = Post.all
 	end
 
 	def show
@@ -14,13 +14,19 @@ class PostsController < ApplicationController
 	end
 
 	def create
-
-	end
+	    @post = Post.new(post_params)
+	    @post.user_id = current_user.id
+	    if @post.save
+	        render :create
+	    else
+	        render :create_error
+	    end
+   end
 
 	private
 
 	def post_params
-        params.require(:post).permit(:user_id, :category_ids [], :post_content)
+        params.require(:post).permit(:user_id, :post_content, category_ids: [])
     end
 
 end

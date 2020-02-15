@@ -1,0 +1,2 @@
+$("#post-modal").modal("hide");
+$("#post_all").prepend("<%= escape_javascript(render 'post_create', post: @post) %>")
