@@ -23,7 +23,11 @@ class PostsController < ApplicationController
 	    else
 	        render :create_error
 	    end
-   end
+    end
+
+    def search
+        @posts = Post.where(['posts.post_content LIKE(?)', "%#{params[:search]}%"]).order(created_at: :desc)
+    end
 
 	private
 
