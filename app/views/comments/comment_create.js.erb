@@ -1,0 +1,2 @@
+$("#comments_area").html("<%= escape_javascript(render 'comments/comment_create', comments: @comment.post.comments ) %>");
+$(".form-control").val('')

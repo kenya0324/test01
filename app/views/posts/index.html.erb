@@ -8,6 +8,7 @@
         	<% post.categories.each do |category| %>
 			    <p><%= category.name %></p>
 			<% end %>
+            <%= link_to 'もっと見る', post_path(post), class:"btn-sm btn-light " %>
         </div>
     <% end%>
 
