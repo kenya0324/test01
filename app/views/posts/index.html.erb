@@ -1,23 +1,18 @@
 <div class="container clearfix">
 
-    <p>検索</p>
-        <%= form_tag(search_path,:method => 'get') do %>
-            <%= text_field_tag :search %>
-            <%= submit_tag 'Search', :name => nil %>
-        <% end %>
-
-    <%= link_to 'Post', new_post_path, remote: true, class: "btn btn-lg, btn-primary post_button" %>
-
-    <% @posts.each do |post| %>
-        <div id="post_all">
-            <p><%= post.user.name %></p>
-        	<p><%= post.post_content %></p>
-        	<% post.categories.each do |category| %>
-			    <p><%= category.name %></p>
-			<% end %>
-            <%= link_to 'もっと見る', post_path(post), class:"btn-sm btn-light " %>
-        </div>
-    <% end%>
+    <div class="post_location">
+        <% @posts.each do |post| %>
+            <div id="post_all">
+                <p class="post_user_name"><%= post.user.name %></p>
+                <p class="post_created_at"><%= post.created_at.strftime("%Y-%m-%d %H:%M") %></p>
+            	<p class="post_content"><%= post.post_content %></p>
+            	<% post.categories.each do |category| %>
+    			    <div class="post_category"><%= category.name %></div>
+    			<% end %>
+                <%= link_to 'もっと見る', post_path(post), class:"post_link" %>
+            </div>
+        <% end%>
+    </div>
 
     <div id="post-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true"></div>
 
