@@ -1,24 +1,30 @@
-# README
+# エンジニア向けテスト Ver.01
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## はじめに
 
-Things you may want to cover:
+閲覧いただきありがとうございます。<br>
+エンジニア向けテストに基づいてweb掲示板を作成させていただきました。<br>
 
-* Ruby version
+# Enちゃんねる
 
-* System dependencies
+## Demo
 
-* Configuration
+## 開発環境
 
-* Database creation
+- 言語 : Ruby2.5.7
+- フレームワーク : Rails5.2.4
+- バージョン管理 : Github
+- DB : mysql2、sqlite3
 
-* Database initialization
+## 実装した機能
 
-* How to run the test suite
+### ユーザー機能
 
-* Services (job queues, cache servers, search engines, etc.)
+- ユーザー登録機能(devise)
+- ログイン機能(devise)
+- 投稿機能(modal)
+- 投稿一覧機能
+- コメント機能(非同期:jquery)
+- 検索機能
+- カテゴリー機能
 
-* Deployment instructions
-
-* ...
