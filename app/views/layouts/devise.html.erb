@@ -20,13 +20,6 @@
                   <h3>Enちゃんねる</h3>
               </div>
 
-              <div class="nav_post_search">
-                      <%= form_tag(search_path,:method => 'get') do %>
-                          <%= text_field_tag :search, "",placeholder:"検索" %>
-                          <button type="submit" class="search_button"  id="search_button_link"><i class="fas fa-search"></i></button>
-                      <% end %>
-              </div>
-
               <div class="nav_home_bar">
                 <ul class="navbar-nav">
                   <% if user_signed_in? %>

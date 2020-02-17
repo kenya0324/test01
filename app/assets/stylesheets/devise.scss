@@ -1,0 +1,85 @@
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------session-----------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------*/
+
+.session_location{
+	margin-top: 100px;
+	margin-left: 410px;
+	padding-top: 20px;
+	padding-bottom: 30px;
+	width: 280px;
+	text-align: center;
+	border: 2px solid whitesmoke;
+}
+
+.email_field{
+	margin-top: 30px;
+}
+
+.login_button{
+	margin-top: 15px;
+}
+
+.login_button_link{
+	width: 170px;
+	height: 30px;
+	background-color: dodgerblue;
+	border-color: dodgerblue;
+	color: white;
+}
+
+.login_button_link :hover{
+	width: 170px;
+	height: 30px;
+	background-color: #66b3ff;
+	border-color: dodgerblue;
+	color: white;
+}
+
+.devise_shared_links{
+	margin-top: 10px;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------registration------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------*/
+
+.registration_location{
+	margin-top: 100px;
+	margin-left: 410px;
+	padding-top: 20px;
+	padding-bottom: 30px;
+	width: 280px;
+	text-align: center;
+	border: 2px solid whitesmoke;
+}
+
+.name_field{
+	margin-top: 30px;
+}
+
+.signin_button{
+	margin-top: 15px;
+}
+
+.signin_button_link{
+	width: 170px;
+	height: 30px;
+	background-color: dodgerblue;
+	border-color: dodgerblue;
+	color: white;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------forget_password---------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------*/
+
+.password_change_link{
+	width: 220px;
+	height: 30px;
+	background-color: dodgerblue;
+	border-color: dodgerblue;
+	color: white;
+}
+
