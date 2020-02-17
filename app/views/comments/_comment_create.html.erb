@@ -5,7 +5,9 @@
 	        <p class="comment_created_at"><%= comment.created_at.strftime("%Y-%m-%d %H:%M") %></p>
 	        <p class="comment_content"><%= comment.content %></p>
 	        <% if comment.user == current_user %>
-	            <p><%= link_to '書き込みを削除する', post_comment_path(comment.post_id, comment.id), method: :delete, remote: true, class:"comment_destroy" %></p>
+	            <div class="comment_option">
+	            	<p id="comment_destroy_link"><%= link_to '書き込みを削除する', post_comment_path(comment.post_id, comment.id), method: :delete, remote: true, class:"comment_destroy" %></p>
+	            </div>
 	        <% end %>
 	    </div>
     <% end %>
