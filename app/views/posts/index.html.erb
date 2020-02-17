@@ -1,18 +1,23 @@
 <div class="container clearfix">
 
     <div class="post_location">
-        <% @posts.each do |post| %>
-            <div id="post_all">
-                <p class="post_user_name"><%= post.user.name %></p>
-                <p class="post_created_at"><%= post.created_at.strftime("%Y-%m-%d %H:%M") %></p>
-            	<p class="post_content"><%= post.post_content %></p>
-            	<% post.categories.each do |category| %>
-    			    <div class="post_category"><%= category.name %></div>
-    			<% end %>
-                <%= link_to 'もっと見る', post_path(post), class:"post_link" %>
-            </div>
-        <% end%>
+        <div id="post_all">
+            <% @posts.each do |post| %>
+                <div class="post_content_all">
+                    <p class="post_user_name"><%= post.post_content %></p>
+                    <p class="post_created_at"><%= post.created_at.strftime("%Y-%m-%d %H:%M") %></p>
+                    <div class="post_category">カテゴリー：
+                    	<% post.categories.each do |category| %>
+            			    <%= category.name %>
+            			<% end %>
+                    </div>
+                    <div><%= link_to '書き込みを見る', post_path(post), class:"post_link" %></div>
+                </div>
+            <% end%>
+        </div>
     </div>
+
+    <%= link_to 'スレッド作成', new_post_path, remote: true, class: "post_button" %>
 
     <div id="post-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true"></div>
 

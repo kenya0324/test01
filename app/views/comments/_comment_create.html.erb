@@ -1,9 +1,12 @@
-<% comments.each do |comment| %>
-   <% unless comment.id.nil? %>
-        <p><%= comment.user.name %></p>
-        <p>コメント：<%= comment.content %></p>
-        <% if comment.user == current_user %>
-            <p><%= link_to 'コメントを削除する', post_comment_path(comment.post_id, comment.id), method: :delete, remote: true %></p>
-        <% end %>
+<% comments.each_with_index do |comment , idx| %>
+    <% unless comment.id.nil? %>
+        <div class="comment_all">
+	        <p class="comment_user_name"><%= idx + 1 %>：name <%= comment.user.name %></p>
+	        <p class="comment_created_at"><%= comment.created_at.strftime("%Y-%m-%d %H:%M") %></p>
+	        <p class="comment_content"><%= comment.content %></p>
+	        <% if comment.user == current_user %>
+	            <p><%= link_to '書き込みを削除する', post_comment_path(comment.post_id, comment.id), method: :delete, remote: true, class:"comment_destroy" %></p>
+	        <% end %>
+	    </div>
     <% end %>
 <% end %>

@@ -1,7 +1,8 @@
-<div id="post_all">
-	<p><%= post.user.name %></p>
-	<p><%= post.post_content %></p>
+<div class="post_content_all">
+    <p class="post_user_name"><%= post.post_content %></p>
+    <p class="post_created_at"><%= post.created_at.strftime("%Y-%m-%d %H:%M") %></p>
 	<% post.categories.each do |category| %>
-	    <p><%= category.name %></p>
+	    <div class="post_category">カテゴリー：<%= category.name %></div>
 	<% end %>
+    <div><%= link_to '書き込みを見る', post_path(post), class:"post_link" %></div>
 </div>
