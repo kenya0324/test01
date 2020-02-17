@@ -11,13 +11,23 @@
             			    <%= category.name %>
             			<% end %>
                     </div>
-                    <div><%= link_to '書き込みを見る', post_path(post), class:"post_link" %></div>
+                    <div class="post_option">
+                        <div id="post_show_link">
+                            <%= link_to '書き込みを見る', post_path(post), class:"btn-sm btn-light post_link" %>
+                        </div>
+                        <div id="post_destroy_link">
+                            <%= link_to "スレッド削除", post_path(post.id), method: :delete, "data-confirm" => "本当に削除しますか？" ,
+                            class:"post_destroy"%>
+                        </div>
+                    </div>
                 </div>
             <% end%>
         </div>
     </div>
 
-    <%= link_to 'スレッド作成', new_post_path, remote: true, class: "post_button" %>
+    <div id="post_button_link">
+        <%= link_to 'スレッド作成', new_post_path, remote: true, class: "post_button" %>
+    </div>
 
     <div id="post-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true"></div>
 

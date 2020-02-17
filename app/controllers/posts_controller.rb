@@ -25,6 +25,12 @@ class PostsController < ApplicationController
 	    end
     end
 
+    def destroy
+        @post = Post.find(params[:id])
+        @post.destroy
+        redirect_to posts_path
+    end
+
     def search
         @posts = Post.where(['posts.post_content LIKE(?)', "%#{params[:search]}%"]).order(created_at: :desc)
     end
