@@ -1,8 +1,9 @@
 <div class="container clearfix">
     <div class="post_show_all">
         <h2 class="post_show_title"><%= @post.post_content %></h2>
+        カテゴリー：
         <% @post.categories.each do |category| %>
-            <p>カテゴリー：<%= category.name %></p>
+            <%= category.name %>
         <% end %>
     </div>
     <div>
