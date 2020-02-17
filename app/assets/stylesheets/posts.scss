@@ -3,10 +3,10 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .post_location{
-	margin-top: 30px;
+	margin-top: 70px;
 }
 
-#post_all{
+.post_content_all{
 	border: 2px solid whitesmoke;
 	margin-bottom: 10px;
 }
@@ -35,16 +35,26 @@
 }
 
 .post_link{
+	padding-left: 5px;
 	clear: both;
 	display: block;
 	border-top: 2px solid whitesmoke;
 }
 
+.post_button{
+	position: fixed;
+	top: 70px;
+	left:  20px;
+}
 
+.post_button a{
+	text-decoration: none;
+	color: black;
+}
 
-
-
-
+.post_show_all{
+	margin-top: 70px;
+}
 
 
 
