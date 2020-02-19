@@ -29,6 +29,7 @@
                         </div>
                     </div>
                 <% end%>
+
             <% else @post_or_comment=="2" %>
                 <% @comments.each_with_index do |comment , idx| %>
                     <% unless comment.id.nil? %>
@@ -47,6 +48,7 @@
                         </div>
                     <% end %>
                 <% end %>
+
             <% end %>
         </div>
     </div>

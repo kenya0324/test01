@@ -38,7 +38,7 @@ class PostsController < ApplicationController
     end
 
     def search
-		@post_or_comment_or_category=params[:option]
+		@post_or_comment=params[:option]
 		if    @post_or_comment=="1"
 			  @posts = Post.where(['posts.post_content LIKE(?)', "%#{params[:search]}%"]).order(created_at: :desc)
 		else  @post_or_comment=="2"
