@@ -10,11 +10,12 @@
 ## Demo
 
 **スレッド一覧画面**<br>
-<img src="https://user-images.githubusercontent.com/57277844/74791315-7c125080-52fd-11ea-8bb1-ec19a7479e17.png" width="1000px">
+<img width="1000" alt="スクリーンショット 2020-02-19 16 46 25" src="https://user-images.githubusercontent.com/57277844/74812906-aaad1d00-5337-11ea-8e19-483f2b9f1ceb.png">
+
 <br>
 
 **レス画面**<br>
-<img src="https://user-images.githubusercontent.com/57277844/74791255-52592980-52fd-11ea-886f-ac9b4daf9c35.png" width="1000px">
+<img width="1000" alt="スクリーンショット 2020-02-19 16 46 41" src="https://user-images.githubusercontent.com/57277844/74812859-923d0280-5337-11ea-978b-72aaef913400.png">
 
 
 ## 開発環境
