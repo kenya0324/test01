@@ -33,7 +33,17 @@ class PostsController < ApplicationController
 
     def search
         @posts = Post.where(['posts.post_content LIKE(?)', "%#{params[:search]}%"]).order(created_at: :desc)
+
     end
+
+    def search
+		@post_or_comment_or_category=params[:option]
+		if    @post_or_comment=="1"
+			  @posts = Post.where(['posts.post_content LIKE(?)', "%#{params[:search]}%"]).order(created_at: :desc)
+		else  @post_or_comment=="2"
+			  @comments = Comment.where(['comments.content LIKE(?)', "%#{params[:search]}%"]).order(created_at: :desc)
+		end
+	end
 
 	private
 

@@ -21,8 +21,9 @@
               </div>
 
               <div class="nav_post_search">
-                      <%= form_tag(search_path,:method => 'get') do %>
-                          <%= text_field_tag :search, "",placeholder:"検索" %>
+                      <%= form_tag(search_path, :method=>'get')do %>
+                          <%=select_tag(:option,options_for_select([["スレッド","1"],["レス","2"]]))%>
+                          <%= text_field_tag :search %>
                           <button type="submit" class="search_button"  id="search_button_link"><i class="fas fa-search"></i></button>
                       <% end %>
               </div>
