@@ -2,43 +2,51 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+/* 投稿全体の余白を指定しています */
 .post_location{
 	margin-top: 70px;
 }
 
+/* 投稿部分の余白を指定しています */
 .post_content_all{
 	border: 2px solid whitesmoke;
 	margin-bottom: 10px;
 }
 
+/* 投稿者の名前の位置と枠線を指定しています */
 .post_user_name{
 	padding-left: 5px;
 	border-bottom: 2px solid whitesmoke;
 	float: left;
 }
 
+/* 投稿者の投稿時間の位置と枠線を指定しています */
 .post_created_at{
 	text-align: right;
 	padding-right: 5px;
 	border-bottom: 2px solid whitesmoke;
 }
 
+/* 投稿の本文の位置と枠線を指定しています */
 .post_content{
 	padding-left: 5px;
 	border-bottom: 2px solid whitesmoke;
 	clear: both;
 }
 
+/* 投稿のカテゴリーの位置を指定しています */
 .post_category{
 	padding-left: 5px;
 	clear: both;
 }
 
+/* 投稿の各種ボタンの余白を指定しています */
 .post_option{
 	padding-left: 3.5px;
 	padding-bottom: 8px;
 }
 
+/* 投稿の詳細へのリンクの位置を指定しています */
 .post_link{
 	padding-left: 10px;
 	float: left;
@@ -46,6 +54,7 @@
 	border-radius: 10px;
 }
 
+/* 投稿の削除ボタンのレイアウトを指定しています */
 .post_destroy{
 	clear: both;
 	margin-left: 880px;
@@ -59,15 +68,18 @@
 	padding-bottom: 3px;
 }
 
+/* 投稿の削除ボタンのリンクの下線を消しています */
 #post_destroy_link a{
 	text-decoration: none;
 }
 
+/* 投稿の削除ボタンのホバー時の色を指定しています */
 #post_destroy_link :hover{
 	background-color: #db5872;
 	color: white;
 }
 
+/* 投稿ボタンのレイアウトを指定しています */
 .post_button{
 	position: fixed;
 	top: 70px;
@@ -80,21 +92,27 @@
 	border-radius: 5px;
 }
 
+/* 投稿ボタンのレイアウトを指定しています */
 #post_button_link a{
 	text-decoration: none;
 	font-size: 20px;
 	background-color: dodgerblue;
 }
 
+/* 投稿ボタンのホバー時の色を指定しています */
 #post_button_link :hover{
 	background-color: #66b3ff;
 	color: white;
 }
 
+/* 投稿詳細全体の余白を指定しています */
 .post_show_all{
 	margin-top: 70px;
 }
 
+/* 検索フォームの余白を指定しています */
 .post_search{
 	margin-bottom: 50px;
 }
+
+
