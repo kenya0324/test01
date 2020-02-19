@@ -8,6 +8,9 @@
 	            <div class="comment_option">
 	            	<p id="comment_destroy_link"><%= link_to '書き込みを削除する', post_comment_path(comment.post_id, comment.id), method: :delete, remote: true, class:"comment_destroy" %></p>
 	            </div>
+	        <% else %>
+	            <div class="notlogin_comment_option">
+	            </div>
 	        <% end %>
 	    </div>
     <% end %>

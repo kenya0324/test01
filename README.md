@@ -9,6 +9,13 @@
 
 ## Demo
 
+**スレッド一覧画面**<br>
+<img src="https://user-images.githubusercontent.com/57277844/74791255-52592980-52fd-11ea-886f-ac9b4daf9c35.png" width="1000px"><br>
+
+**レス画面**<br>
+<img src="https://user-images.githubusercontent.com/57277844/74791315-7c125080-52fd-11ea-8bb1-ec19a7479e17.png" width="1000px">
+
+
 ## 開発環境
 
 - 言語 : Ruby2.5.7

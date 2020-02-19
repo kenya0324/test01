@@ -68,6 +68,11 @@
 	padding-bottom: 3px;
 }
 
+/* ログイン前の投稿の削除ボタンのレイアウトを指定しています */
+.post_destroy_none{
+	clear: both;
+}
+
 /* 投稿の削除ボタンのリンクの下線を消しています */
 #post_destroy_link a{
 	text-decoration: none;
