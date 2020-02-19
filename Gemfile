@@ -68,3 +68,5 @@ gem 'bootstrap', '~> 4.3.1'
 gem 'devise'
 
 gem 'pry-rails'
+
+gem 'rails-i18n'
